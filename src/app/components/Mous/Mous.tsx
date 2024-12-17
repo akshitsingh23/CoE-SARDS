@@ -57,21 +57,26 @@ const marqueeData = [
 
 export function Mous() {
     return (
-        <div className="h-full w-full overflow-y-hidden bg-black">
-            <Marquee speed={100} className="h-full w-full overflow-y-hidden bg-black">
-                {marqueeData.map((data, i) => (
-                    <div key={i} className="h-[20vh] w-full flex flex-col items-center justify-center p-5">
-                        <Image
-                            src={data.img}
-                            alt={data.alt}
-                            className="w-full h-full border-black object-cover hover:shadow-lg hover:shadow-orange-400 rounded-full"
-                            width={200}
-                            height={200}
-                        />
-                        {/* <span className="text-black">{data.name}</span> */}
-                    </div>
-                ))}
-            </Marquee>
+        <div className="h-full w-full overflow-y-hidden bg-black lh:p-24 py-10">
+            <div className='h-full w-full flex flex-col items-center justify-center p-10'>
+                <h1 className="text-white text-4xl text-center">IIT Ropar has MoUs in place with the following commands/Govt agencies</h1>
+            </div>
+            <div className='lg:p-10 p-1'>
+                <Marquee speed={100} className="h-full w-full overflow-y-hidden bg-black">
+                    {marqueeData.map((data, i) => (
+                        <div key={i} className="h-[20vh] w-full flex flex-col items-center justify-center px-4">
+                            <Image
+                                src={data.img}
+                                alt={data.alt}
+                                className="w-full h-full border-black object-cover hover:shadow-lg hover:shadow-orange-400 rounded-full"
+                                width={200}
+                                height={200}
+                            />
+                            {/* <span className="text-black">{data.name}</span> */}
+                        </div>
+                    ))}
+                </Marquee>
+            </div>
         </div>
     )
 }
