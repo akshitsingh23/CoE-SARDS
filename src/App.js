@@ -2,9 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Home from '../src/components/Home';
 import Navbar from './components/Navbar/Navbar';
-import Carousel from './components/Carousel/Carousel';
-import Programs from './components/Programs/Programs';
-import Mou from './components/Mou/Mou';
+import About from './components/About/About';
+
 import Footer from './components/footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
@@ -18,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/*" element={<Home />} />
             <Route path="/sards" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
           <Footer />
           {/* <Mou /> */}

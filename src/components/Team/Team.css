@@ -1,0 +1,25 @@
+.outTeam__card {
+    -webkit-animation: animateOnLodeScale .7s ease-in;
+    animation: animateOnLodeScale .7s ease-in;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    font-family: sans-serif;
+    height: 370px;
+    margin: 15px;
+    max-width: 260px;
+    min-width: 260px;
+    padding: 20px;
+    text-align: center;
+    transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+.outTeam__cardImg {
+    border-radius: 50%;
+    display: block;
+    height: 150px;
+    margin: 25px auto 20px;
+    object-fit: cover;
+    width: 150px;
+}

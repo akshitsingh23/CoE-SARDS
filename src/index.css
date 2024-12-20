@@ -17,3 +17,25 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  border-radius: 10%;
+}
+
+::-webkit-scrollbar-track {
+  background: #ff606000; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00000000; /* Color of the scrollbar thumb */
+  border-radius: 10%px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00000000; /* Color of the scrollbar thumb when hovered */
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff1313 #20202000;
+}

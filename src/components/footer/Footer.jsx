@@ -73,19 +73,19 @@ function Footer() {
                         </a>
                         <h2 className="sm:mb-10 xs:mb-10 xs:mt-5 font-roboto text-3xl text-center text-white transition-transform ease-in-out delay-400">Connect with Us</h2>
                         <div className="flex justify-between items-center gap-3 lg:mb-11 sm:mb-5 md:mb-8 xs:mb-5">
-                            <a href="https://www.linkedin.com/company/iit-ropar-technology-business-incubator-foundation?original_refe" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='hover:scale-110' icon={faLinkedin} size="2x" color="#0077B5" />
                             </a>
-                            <a href="https://www.instagram.com/iitropartbif/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='hover:scale-110' icon={faInstagram} size="2x" color="#E1306C" />
                             </a>
-                            <a href="https://x.com/iitrprtbif?lang=en" target="_blank" rel="noopener noreferrer">
+                            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='hover:scale-110' icon={faXTwitter} size="2x" color="white" />
                             </a>
                             <a href="mailto:tbif.iitrpr.ac.in" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='hover:scale-110' icon={faGoogle} size="2x" color="#DB4437" />
                             </a>
-                            <a href="https://www.facebook.com/p/IIT-Ropar-TBIF-100064188995310/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='hover:scale-110' icon={faFacebookF} size="2x" color="#1877F2" />
                             </a>
                         </div>

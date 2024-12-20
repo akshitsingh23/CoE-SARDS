@@ -5,7 +5,7 @@ import './programs.css';
 import img0 from "../power/army.png";
 import img1 from "../power/sf.jpeg";
 import img2 from "../power/power.webp";
-import img3 from "../power/power.webp";
+import img3 from "../power/ghatak.jpg";
 // import img0 from '../../images/power/airforce.jpg';
 // import img3 from '../../images/power/army3.webp';
 
@@ -59,7 +59,7 @@ export function Programs() {
             </div>
             <div className="flex justify-center items-center program-container gap-4">
                 {programData.map(program => (
-                    <div key={program.id} className="program-item bg-gradient-to-tr from-blue-400 to-green-500 hover:bg-gradient-to-tr hover:from-red-800 hover:to-sky-400 hover:text-orange-200 font-Montserrat" data-wow-delay="0.2s" data-wow-duration="0.5s">
+                    <div key={program.id} className="program-item bg-gradient-to-tr from-blue-300 to-blue-900 hover:bg-gradient-to-tr hover:from-red-800 hover:to-sky-400 hover:text-orange-200 font-Montserrat" data-wow-delay="0.2s" data-wow-duration="0.5s">
                         <div className='lg:block hidden'>
                             <br />
                             <br />
