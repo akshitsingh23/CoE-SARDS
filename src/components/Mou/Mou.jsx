@@ -54,7 +54,7 @@ const marqueeData = [
     }
 ];
 
-export function Mous() {
+export function Mou() {
     return (
         <div className="h-full w-full overflow-y-hidden bg-black lh:p-24 py-10">
             <div className='h-full w-full flex flex-col items-center justify-center p-10'>
@@ -78,4 +78,4 @@ export function Mous() {
     );
 }
 
-export default Mous;
+export default Mou;

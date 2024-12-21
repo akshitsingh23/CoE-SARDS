@@ -6,7 +6,7 @@ import img3 from "../power/army3.webp";
 import img4 from "../power/airpower.avif";
 import vikrant from '../power/vikrant.avif';
 
-const CarouselWithContent = () => {
+function Carousel  () {
     const [activeIndex, setActiveIndex] = useState(0);
     const [transition, setTransition] = useState(true);
 
@@ -95,7 +95,7 @@ const CarouselWithContent = () => {
                             alt={`Slide ${index + 1}`}
                             className="h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
+                        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/40">
                             <div className="w-3/4 text-center md:w-2/4">
                                 <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl text-white">
                                     {/* {image.title} */}
@@ -109,19 +109,19 @@ const CarouselWithContent = () => {
                 ))}
             </div>
             <button
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-orange-800 bg-white p-2 rounded-full shadow-lg z-10"
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-green-900 p-2 rounded-full shadow-lg z-10"
                 onClick={handlePrev}
             >
-                <FaArrowLeft className="w-6 h-6" />
+                <FaArrowLeft className="w-10 h-6" />
             </button>
             <button
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-orange-800 bg-white p-2 rounded-full shadow-lg z-10"
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-green-900 p-2 rounded-full shadow-lg z-10"
                 onClick={handleNext}
             >
-                <FaArrowRight className="w-6 h-6" />
+                <FaArrowRight className="w-10 h-6" />
             </button>
         </div>
     );
 };
 
-export default CarouselWithContent;
+export default Carousel;

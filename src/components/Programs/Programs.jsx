@@ -41,7 +41,7 @@ const programData = [
     // Add more program items here
 ];
 
-export function Programs() {
+function Programs() {
     const handleMouseLeave = () => {
         const imgElement = document.getElementById('img2');
         if (imgElement) {

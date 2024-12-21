@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faXTwitter, faGoogle, faFacebookF } from '@fortawesome/free-brands-svg-icons';
-
+import { Link } from 'react-router-dom';
 function Footer() {
     const topRef = useRef(null);
 
@@ -53,11 +53,8 @@ function Footer() {
                                         <a href="/team" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Team</a>
                                     </li>
                                     <li className="text-white font-montserrat font-bold text-sm hover:text-orange-400 p-2 hover-underline-animation">
-                                        <a href="/facilities" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Support</a>
-                                    </li>
-                                    <li className="text-white font-montserrat font-bold text-sm hover:text-orange-400 p-2 hover-underline-animation">
-                                        <a href="/career" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Career</a>
-                                    </li>
+                                        <a href="/events" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Events</a>
+                                    </li>                                 
                                     <li className="text-white font-montserrat font-bold text-sm hover:text-orange-400 p-2 hover-underline-animation">
                                         <a href="/contact-us" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact Us</a>
                                     </li>

@@ -2,7 +2,7 @@
 import React from 'react';
 // import rajeev from '../directorimages/rajeevahuja.png';
 import '../styles/Dmssg.css';
-import karuna from '../TeamPhotos/Karuna Kanwar.jpg';
+import karuna from '../TeamPhotos/Karuna Kanwa  r.jpg';
 import riteeka from '../TeamPhotos/ritika_mahajan.jpg';
 import narinder from '../TeamPhotos/narinder.jpg';
 import mam from '../TeamPhotos/ms__akwinder_kaur_.jpeg';
