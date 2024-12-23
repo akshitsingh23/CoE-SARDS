@@ -9,7 +9,7 @@ import Team from '../src/components/Team/Team';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <Router basename={'/'}>
+    <Router>
       < div className="bg-black" >
         {/* <Home /> */}
         <Navbar />
