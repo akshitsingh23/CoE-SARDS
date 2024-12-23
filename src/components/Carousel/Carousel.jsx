@@ -6,9 +6,9 @@ import img3 from "../power/army3.webp";
 import img4 from "../power/airpower.avif";
 import vikrant from '../power/vikrant.avif';
 
-function Carousel  () {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [transition, setTransition] = useState(true);
+
+function Carousel() {
+
 
     const images = [
         {
@@ -43,6 +43,10 @@ function Carousel  () {
         }
     ];
 
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [transition, setTransition] = useState(true);
+    const [timer, setTimer] = useState(3500); // Default timer is 3.5 seconds
+
     useEffect(() => {
         const interval = setInterval(() => {
             setTransition(false);
@@ -52,10 +56,10 @@ function Carousel  () {
                 );
                 setTransition(true);
             }, 300); // Transition duration
-        }, 3500); // Slide change interval
+        }, timer); // Slide change interval
 
         return () => clearInterval(interval);
-    }, [images.length]);
+    }, [images.length, timer]);
 
     const handlePrev = () => {
         setTransition(false);
@@ -65,6 +69,7 @@ function Carousel  () {
             );
             setTransition(true);
         }, 300); // Transition duration
+        setTimer(4000); // Set timer to 6 seconds for the current image
     };
 
     const handleNext = () => {
@@ -75,6 +80,7 @@ function Carousel  () {
             );
             setTransition(true);
         }, 300); // Transition duration
+        setTimer(6000); // Set timer to 6 seconds for the current image
     };
 
     return (
@@ -84,10 +90,10 @@ function Carousel  () {
                     <div
                         key={index}
                         className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out ${index === activeIndex
-                                ? "translate-x-0"
-                                : index > activeIndex
-                                    ? "translate-x-full"
-                                    : "-translate-x-full"
+                            ? "translate-x-0"
+                            : index > activeIndex
+                                ? "translate-x-full"
+                                : "-translate-x-full"
                             }`}
                     >
                         <img
@@ -95,31 +101,46 @@ function Carousel  () {
                             alt={`Slide ${index + 1}`}
                             className="h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/40">
+                        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/60">
                             <div className="w-3/4 text-center md:w-2/4">
-                                <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl text-white">
-                                    {/* {image.title} */}
+                                <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-montserrat text-white">
+                                    {image.title}
                                 </h1>
-                                <p className="mb-12 text-white opacity-80">
-                                    {/* {image.description} */}
+                                <p className=" text-white  font-montserrat">
+                                    {image.description}
                                 </p>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-            <button
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-green-900 p-2 rounded-full shadow-lg z-10"
-                onClick={handlePrev}
-            >
-                <FaArrowLeft className="w-10 h-6" />
-            </button>
-            <button
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-green-900 p-2 rounded-full shadow-lg z-10"
-                onClick={handleNext}
-            >
-                <FaArrowRight className="w-10 h-6" />
-            </button>
+            {/* <div className="absolute inset-0 grid place-items-center bg-black/40">
+                <div className="w-3/4 text-center md:w-2/4">
+                    <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl text-white">
+                        {images[activeIndex].title}
+                    </h1>
+                    <p className="mb-12 text-white opacity-80">
+                        {images[activeIndex].description}
+                    </p>
+                </div>
+            </div> */}
+
+            <div className="absolute top-1/2 left-4 transform -translate-y-1/2 p-1 bg-white hover:shadow-lg hover:shadow-white rounded-full">
+                <button
+                    className="text-white bg-orange-400 p-2 rounded-full shadow-lg z-10"
+                    onClick={handlePrev}
+                >
+                    <FaArrowLeft className="w-10 h-6" />
+                </button>
+            </div>
+            <div className="absolute top-1/2 right-4 transform -translate-y-1/2 p-1 hover:shadow-lg hover:shadow-white  bg-white rounded-full">
+                <button
+                    className="text-white bg-orange-500 p-2 rounded-full shadow-lg z-10"
+                    onClick={handleNext}
+                >
+                    <FaArrowRight className="w-10 h-6" />
+                </button>
+            </div>
         </div>
     );
 };

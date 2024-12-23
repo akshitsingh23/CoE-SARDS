@@ -31,11 +31,11 @@ function Navbar() {
                 <div className="flex justify-between h-16 items-center">
                     <Link to="/" className="flex items-center" onClick={scrollToTop}>
                         <img src={logo} alt="Logo" className="h-20 w-20 mr-2" />
-                        <span className="text-xl font-bold font-montserrat text-white-600">
+                        <span className={`text-xl font-bold font-montserrat  ${scrolled ? "text-black" : "text-white"} duration-20 transition-colors `}>
                             Center Of Excellence - SARDS
                         </span>
                     </Link>
-
+                    {/* {`text-xl font-bold font-montserrat  ${scrolled ? "text-white" : "text-black"} `} */}
                     <div className={`hidden md:flex transition-colors text-center text-md space-x-6 font-montserrat font-bold duration-20 ${scrolled ? "text-black" : "text-white"} lg:px-12 px-3 py-4 `} >
                         <Link to="/" className="hover:text-orange-500 hover:underline hover:underline-offset-8 hover:decoration-orange-500 transition-all duration-300" onClick={scrollToTop}>
                             Home

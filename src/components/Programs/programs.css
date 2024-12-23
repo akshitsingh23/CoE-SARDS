@@ -39,7 +39,7 @@
     /* Add this to make the content scrollable if it exceeds the max height */
 }
 .program-item:hover {
-    box-shadow: 5px 10px 10px  rgba(211, 53, 53, 0.982);
+    box-shadow: 5px 10px 10px  rgba(255, 210, 49, 0.982);
     transition: 0.3s;
 }
 

@@ -89,7 +89,7 @@ function Events() {
             <br />
             <br />
             {/* <h1 className=''>Events</h1> */}
-            <div className="text-orange-400 text-center p-10 text-5xl font-montserrat">Events</div>
+            <div className=" text-center p-10 text-5xl bg-clip-text font-bold font-montserrat text-transparent mb-5 bg-gradient-to-tr from-red-100 to-blue-300">Events</div>
             <div className="p-4 flex justify-center items-center grid lg:grid-cols-3 gap-3 md:grid-cols-2 sm:grid-cols-1  lg:overflow-hidden   ">
                 {images.map((event, index) => (
                     <div className="relative md:w-[400px]">
