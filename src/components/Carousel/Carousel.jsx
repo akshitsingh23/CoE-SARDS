@@ -30,12 +30,6 @@ function Carousel() {
                 "The most powerful incubators are those that foster not just growth but also resilience in the startups they nurture.",
         },
         {
-            src: img2,
-            title: "The Beauty of Journey",
-            description:
-                "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
-        },
-        {
             src: vikrant,
             title: "The Beauty of Power",
             description:
@@ -45,7 +39,7 @@ function Carousel() {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [transition, setTransition] = useState(true);
-    const [timer, setTimer] = useState(3500); // Default timer is 3.5 seconds
+    const [timer, setTimer] = useState(5000); // Default timer is 3.5 seconds
 
     useEffect(() => {
         const interval = setInterval(() => {
