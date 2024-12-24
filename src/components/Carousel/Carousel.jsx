@@ -39,7 +39,7 @@ function Carousel() {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [transition, setTransition] = useState(true);
-    const [timer, setTimer] = useState(5000); // Default timer is 3.5 seconds
+    const [timer, setTimer] = useState(6000); // Default timer is 3.5 seconds
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -124,7 +124,7 @@ function Carousel() {
                     className="text-white bg-orange-400 p-2 rounded-full shadow-lg z-10"
                     onClick={handlePrev}
                 >
-                    <FaArrowLeft className="w-10 h-6" />
+                    <FaArrowLeft className="w-5 h-6" />
                 </button>
             </div>
             <div className="absolute top-1/2 right-4 transform -translate-y-1/2 p-1 hover:shadow-lg hover:shadow-white  bg-white rounded-full">
@@ -132,7 +132,7 @@ function Carousel() {
                     className="text-white bg-orange-500 p-2 rounded-full shadow-lg z-10"
                     onClick={handleNext}
                 >
-                    <FaArrowRight className="w-10 h-6" />
+                    <FaArrowRight className="w-5 h-6" />
                 </button>
             </div>
         </div>

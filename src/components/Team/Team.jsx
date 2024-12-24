@@ -36,7 +36,7 @@ const teamMembers = [
   },
   {
     imgSrc:admiral,
-    name: 'Read Adm. Brijesh Vashishth',
+    name: 'Rear Adm Brijesh Vashishta (Retd)',
     designation: 'Professor Of Practice',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -58,9 +58,9 @@ function Team() {
         <br />
         <h1 className='text-center bg-clip-text text-transparent mb-5 bg-gradient-to-tr from-red-100 to-blue-300 text-center mt-5 font-montserrat font-bold text-5xl'>Dedicated Team</h1>
         <div className='flex justify-center items-center'>
-          <div className="grid xl:grid-cols-3  md:grid-cols-2 gap-3 flex-wrap auto-rows-auto">
+          <div className="grid xl:grid-cols-3   md:grid-cols-2 gap-3 flex-wrap auto-rows-auto">
             {teamMembers.map((member, index) => (
-              <div key={index} className={`outTeam__card hover:scale-105 hover:text-orange-200 transition duration-200 ease-in-out hover:bg-gradient-to-tr from-zinc-900 to-blue-500 ${index === 6 ? 'xl:col-start-1' : ''}`}>
+              <div key={index} className={`outTeam__card hover:scale-105 hover:text-orange-200 transition duration-200 ease-in-out hover:bg-gradient-to-tr from-zinc-900 to-blue-500 ${index === 4 ? 'xl:col-start-3' : ''}`}>
                 <div className='flex flex-col justify-between h-[400px]'>
                   <div className='grid grid-cols-1 justify-items-center'>
                     <img src={member.imgSrc} alt={member.name} className="outTeam__cardImg fa-border border-yellow-500 border-4" />
