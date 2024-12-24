@@ -84,7 +84,7 @@ function Footer() {
                             <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='hover:scale-110' icon={faXTwitter} size="2x" color="white" />
                             </a>
-                            <a href="mailto:tbif.iitrpr.ac.in" target="_blank" rel="noopener noreferrer">
+                            <a href="mailto:admin@defence.iitrpr.ac.in" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='hover:scale-110' icon={faGoogle} size="2x" color="#DB4437" />
                             </a>
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
