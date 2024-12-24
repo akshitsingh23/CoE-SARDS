@@ -42,7 +42,7 @@ const teamMembers = [
   },
   {
     imgSrc: harbans,
-    name: 'Harbans Singh (Veteran)',
+    name: 'Harbans Bharadwaj (Veteran)',
     designation: 'Sr. Executive Officer',
     linkedin: '/',
   }
