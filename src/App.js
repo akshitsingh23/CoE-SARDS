@@ -9,14 +9,13 @@ import Team from '../src/components/Team/Team';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <Router>
+    <Router basename='/tbif/api'>
       <div>
         < div className="bg-black" >
           {/* <Home /> */}
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/sards" element={<Home />} /> */}
             <Route path="/*" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/events" element={<Events />} />
