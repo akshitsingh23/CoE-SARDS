@@ -5,14 +5,17 @@ import img2 from "../power/army.png";
 import img3 from "../power/army3.webp";
 import img4 from "../power/airpower.avif";
 import vikrant from '../power/vikrant.avif';
-
-
+import heli from '../power/helicopter.jpeg';
+import heli3 from '../power/heli3.jpg';
+import heli4 from '../power/heli4.jpeg';
+import heli2 from '../power/heli2.jpeg';
+import flyingtank from '../power/flyingtank.jpg';
 function Carousel() {
 
 
     const images = [
         {
-            src: img3,
+            src: flyingtank,
             title: "The Beauty of Success",
             description:
                 "A self-reliant India will be a force multiplier for the global economy. We will make products in India, for the world.",
@@ -24,7 +27,7 @@ function Carousel() {
                 "Innovation is the key to realizing the dream of 'New India.' It is the need of the hour, and we in India need to innovate and invest in technology to create a better future.",
         },
         {
-            src: img4,
+            src: heli3,
             title: "The Beauty of Incubation",
             description:
                 "The most powerful incubators are those that foster not just growth but also resilience in the startups they nurture.",
@@ -34,13 +37,35 @@ function Carousel() {
             title: "The Beauty of Power",
             description:
                 "The power of a nation derives from the integrity of the home. The power of a nation derives from the integrity of the home. The power of a nation derives from the integrity of the home.",
-        }
+        },
+
     ];
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [transition, setTransition] = useState(true);
-    const [timer, setTimer] = useState(6000); // Default timer is 3.5 seconds
+    const [timer, setTimer] = useState(8000); // Default timer is 3.5 seconds
+    const [isPaused, setIsPaused] = useState(false);
 
+    useEffect(() => {
+        if (!isPaused) {
+            const interval = setInterval(() => {
+                setTransition(false);
+                setTimeout(() => {
+                    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+                    setTransition(true);
+                }, 500); // Transition duration
+            }, timer);
+
+            return () => clearInterval(interval);
+        }
+    }, [activeIndex, isPaused, timer]);
+    const handleMouseDown = () => {
+        setIsPaused(true);
+    };
+
+    const handleMouseUp = () => {
+        setIsPaused(false);
+    };
     useEffect(() => {
         const interval = setInterval(() => {
             setTransition(false);
@@ -63,7 +88,7 @@ function Carousel() {
             );
             setTransition(true);
         }, 300); // Transition duration
-        setTimer(4000); // Set timer to 6 seconds for the current image
+        setTimer(6000); // Set timer to 6 seconds for the current image
     };
 
     const handleNext = () => {
@@ -79,7 +104,9 @@ function Carousel() {
 
     return (
         <div className="relative flex items-center justify-center h-screen overflow-hidden">
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full "
+                onMouseDown={handleMouseDown}
+                onMouseUp={handleMouseUp}>
                 {images.map((image, index) => (
                     <div
                         key={index}

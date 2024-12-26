@@ -10,8 +10,15 @@ import navalarm from './naval_armaments.jpeg';
 import ukindia from './ukindia.webp';
 import ordnance from './ordnance.jpg';
 import bharat from './Bharat_Dynamics_Logo.png';
+import almerio from './Almerio-Logo.png';
+import gilard from './gilard.png';
+import droneacharya from './Droneacharya-Logo.png';
 
 const marqueeData = [
+    {
+        img: bharat,
+        alt: "bharat"
+    },
     {
         img: navy,
         alt: "navy"
@@ -23,6 +30,14 @@ const marqueeData = [
     {
         img: training,
         alt: "training"
+    },
+    {
+        img: droneacharya,
+        alt: "droneacharya",
+    },
+    {
+        img: ordnance,
+        alt: "ordnance"
     },
     {
         img: fire,
@@ -44,13 +59,16 @@ const marqueeData = [
         img: ukindia,
         alt: "ukindia"
     },
+
+
     {
-        img: ordnance,
-        alt: "ordnance"
+        img: almerio,
+        alt: "Almerio Industries",
     },
+
     {
-        img: bharat,
-        alt: "bharat"
+        img: gilard,
+        alt: "Gilard Industries",
     }
 ];
 
@@ -68,7 +86,7 @@ export function Mou() {
                                 src={data.img}
                                 alt={data.alt}
                                 className=" border-black object-cover hover:shadow-lg hover:shadow-orange-400 rounded-full"
-                                style={{ height: "200px"}}
+                                style={{ height: "200px" }}
                             />
                         </div>
                     ))}
