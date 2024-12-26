@@ -14,28 +14,28 @@ const programData = [
         id: 1,
         title: 'Call For Startup Incubation at IIT ROPAR - TBIF',
         description: 'Are you innovative entrepreneurs of a startup with a ground-breaking idea? TBIF? Apply now to get incubated at IIT Ropar - TBIF and get access to a wide range of resources and mentorship. Apply by 15th September 2024',
-        link: '/',
+        // link: '/',
         imageUrl: img0,
     },
     {
         id: 2,
         title: 'Entrepreneurship Orientation Program',
         description: 'TBIF, in collaboration with Startup Punjab (GoP), has organized the "Entrepreneurship Orientation Program" specifically tailored for aspiring student entrepreneurs at Indian Institute of Technology, Ropar. The program comprised five interactive sessions held on various dates from 29th February to 28th March 2024.',
-        link: '/',
+        // link: '/',
         imageUrl: img1
     },
     {
         id: 3,
         title: 'Cybersecurity Course for Armed Forces',
         description: 'The Centre of Excellence for Studies and Applied Research in Defence and Security at IIT Ropar, in collaboration with the Directorate General Resettlement (DGR), organized a pioneering course on Cybersecurity for the armed forces.',
-        link: '/',
+        // link: '/',
         imageUrl: img2
     },
     {
         id: 4,
         title: 'DGCA Authorized Remote Pilot Training Organization for and Establishment of CoE with MP Govt. with Incubation focus on Drone tech',
         description: 'Synergy in Research, Development, and Innovation for Modernization of the Military',
-        link: '/',
+        // link: '/',
         imageUrl: img3
     },
     // Add more program items here
