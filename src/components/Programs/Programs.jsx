@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from 'react';
 import './programs.css';
 
@@ -6,37 +6,95 @@ import img0 from "../power/army.png";
 import img1 from "../power/sf.jpeg";
 import img2 from "../power/power.webp";
 import img3 from "../power/ghatak.jpg";
+import tech from './tech.jpeg';
+import drone from './drone.avif';
+import startup from './startup.avif';
+
 // import img0 from '../../images/power/airforce.jpg';
 // import img3 from '../../images/power/army3.webp';
 
 const programData = [
     {
         id: 1,
-        title: 'Call For Startup Incubation at IIT ROPAR - TBIF',
-        description: 'Are you innovative entrepreneurs of a startup with a ground-breaking idea? TBIF? Apply now to get incubated at IIT Ropar - TBIF and get access to a wide range of resources and mentorship. Apply by 15th September 2024',
-        // link: '/',
+        title: 'Education & Training',
+        description: (
+            <>
+                Custom-tailored courses for the Forces.<br />
+                •IIT Ropar is amongst a handful of IITs working with Directorate General Resettlement(DGR) to train officers and JCOs/ ORs
+                <br />
+                •Study leave - M.Tech programs in AI/ML, Structural Engg and Communications/Signal processing
+                <br />
+                •Management Development Programs (MDPs) with ARTRAC
+            </>
+        ),
+        // 'Custom-tailored courses for the Forces.\n•IIT Ropar is amongst a handful of IITs working with Directorate General Resettlement(DGR) to train officers and JCOs/ ORs',        // link: '/',
         imageUrl: img0,
     },
     {
         id: 2,
-        title: 'Entrepreneurship Orientation Program',
-        description: 'TBIF, in collaboration with Startup Punjab (GoP), has organized the "Entrepreneurship Orientation Program" specifically tailored for aspiring student entrepreneurs at Indian Institute of Technology, Ropar. The program comprised five interactive sessions held on various dates from 29th February to 28th March 2024.',
+        title: 'Technology Development',
+        description: (
+            <>
+                Research based solutions for Operation Requirements,
+                Communications and IoT,
+                Drones – training/maintenance,
+                3D printing,
+                Surveillance (computer vision),
+                Advanced Materials and Maintenance,
+                Green and hybrid energy,
+                Avalanche, Landslide protection,
+                Technical Textiles –Functional fabrics for personnel protection,
+                AI/ML and a horizontal,
+                Humanities (Cognitive Sciences, Linguistics, Supply Chain,
+                Logistics, Entrepreneurship, Psychology, etc.)
+            </>
+        ),
         // link: '/',
-        imageUrl: img1
+        imageUrl: tech
     },
     {
         id: 3,
-        title: 'Cybersecurity Course for Armed Forces',
-        description: 'The Centre of Excellence for Studies and Applied Research in Defence and Security at IIT Ropar, in collaboration with the Directorate General Resettlement (DGR), organized a pioneering course on Cybersecurity for the armed forces.',
+        title: 'Startup & Manufacturing',
+        description: (
+            <>
+                Incubation of
+                start-ups and
+                industry partners,
+                <br />
+                A very healthy ecosystem is in place to nurture start-ups at TBIF, IIT
+                Ropar. Several defence start-ups are incubated and working with IIT
+                Ropar faculty on projects.
+                <br />
+                Strong association with MSMEs and industry in Punjab and Norther
+                Region, and access to MSMEs in Central Guj. through CII, FICCI and
+                Chamber of Commerce.
+
+            </>
+        ),
         // link: '/',
-        imageUrl: img2
+        imageUrl: startup,
     },
     {
         id: 4,
-        title: 'DGCA Authorized Remote Pilot Training Organization for and Establishment of CoE with MP Govt. with Incubation focus on Drone tech',
-        description: 'Synergy in Research, Development, and Innovation for Modernization of the Military',
+        title: 'Drone Initiatives',
+        description: (<>
+            • Autonomous swarm drone based area surveillance
+            <br />
+            • Multi - drone based moving target tracking
+            <br />
+            • Smart precision landing pad for VTOL drones
+            <br />
+            • Augmented Reality based immersive crowd surveillance with
+            gesture controlled drone camera control
+            <br />
+            • Drone Swarm based beamforming communication over long range
+            <br />
+            • Monocular depth estimation and target acquisition using drone
+            camera
+        </>
+        ),
         // link: '/',
-        imageUrl: img3
+        imageUrl: drone,
     },
     // Add more program items here
 ];
@@ -66,13 +124,13 @@ function Programs() {
                         </div>
                         <div className="program-figure">
                             <a href={program.link} className='flex justify-center items-center'>
-                                <img src={program.imageUrl} alt={program.title} className='h-40 w-80 object-cover p-1 rounded-2xl' />
+                                <img src={program.imageUrl} alt={program.title} className='h-44 w-80 object-cover p-1 rounded-2xl' />
                             </a>
                         </div>
                         <div className="program-content p-4">
                             <h2 className='text-xl font-bold'>{program.title}</h2>
                             <p className='text-sm'>{program.description}</p>
-                            <a href={program.link} className='text-blue-500 hover:underline'>Learn more</a>
+                            {/* <a href={program.link} className='text-blue-500 hover:underline'>Learn more</a> */}
                         </div>
                     </div>
                 ))}
