@@ -10,7 +10,7 @@ import Contact from '../src/components/Contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <Router basename='/tbif/api'>
+    <Router basename='/coe-sards'>
       <div>
         < div className="bg-black" >
           {/* <Home /> */}

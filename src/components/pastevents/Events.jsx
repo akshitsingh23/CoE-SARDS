@@ -23,6 +23,8 @@ import logo22 from './22.jpeg';
 import logo23 from './23.jpeg';
 import logo24 from './24.jpg';
 import logo25 from './25.jpg';
+import logo26 from './26.jpeg';
+import logo27 from './27.jpeg';
 import cybersec from './cybersec.jpg';
 
 const images = [
@@ -38,36 +40,7 @@ const images = [
         img: logo19,
         title: 'Exchange of Momento with DG Armd Corps'
     },
-    {
-        img: logo18,
-        title: 'Signing of MoU with Almerio Defence & Aerospace'
-    },
 
-    {
-        img: logo1,
-        title: 'IIT Ropar-TBIF signed MoU with Startup Punjab',
-    },
-    {
-        img: logo2,
-        title: 'Certification of first batch of DGR Course, Cyber-Warriors',
-    },
-
-    {
-        img: logo4,
-        title: 'Chematico Technologies (Startup) displaying products at Bharat Tex 2024',
-    },
-    {
-        img: logo5,
-        title: 'PI & Students in-field trials',
-    },
-    {
-        img: logo6,
-        title: 'Signing of MoU with DGNAI, Indian Navy',
-    },
-    {
-        img: logo7,
-        title: 'Sr Army officials interacting with Faculty in Expo'
-    },
     {
         img: logo8,
         title: 'Visit team IIT Ropar to HQ ARTRAC',
@@ -77,36 +50,76 @@ const images = [
         title: 'Team IIT Ropar with Lt Gen M. V. Suchindra Kumar, PVSM, AVSM, YSM**, VSM, GOC-in-C, NC ',
     },
     {
-        img: logo24,
-        title: 'Lt Gen Ram Chander Tiwari, UYSM, AVSM, SM, GOC-in-C, EC visiting IIT Ropar stall in EastTech, 2024 Kolkata'
+        img: logo27,
+        title: 'Visit Sr Officials HQ WC at IIT Ropar '
+    },
+
+    {
+        img: logo6,
+        title: 'Signing of MoU with DGNAI, Indian Navy',
     },
     {
-        img: logo25,
-        title: 'Lt Gen AS Pendharkar, AVSM, YSM, GOC-in-C, Spear Corps interacting at IIT Ropar stall in EastTech, 2024 Kolkata'
+        img: logo18,
+        title: 'Signing of MoU with Almerio Defence & Aerospace'
     },
+    {
+        img: logo1,
+        title: 'IIT Ropar-TBIF signed MoU with Startup Punjab',
+    },
+
     {
         img: logo12,
         title: 'The Genesis : Lt Gen Subrata Saha, PVSM, UYSM, YSM, VSM** (Retd) with Director IIT Ropar'
     },
     {
-        img: logo11,
-        title: 'Dr. Atharva Poundarik interacting with first batch of Cyber-Warriors'
-    },
-    
-
-    {
-        img: logo20,
-        title: 'Team IIT Ropar visiting Uri Grn for project'
+        img: logo24,
+        title: 'Lt Gen Ram Chander Tiwari, UYSM, AVSM, SM, GOC-in-C, EC visiting IIT Ropar stall in EastTech, 2024 Kolkata'
     },
     {
         img: logo21,
         title: 'Lt Gen Upendra Dwivedi, PVSM, AVSM, GOC-in-C visiting IIT Ropar stall in NorthTech, Jammu'
     },
+
+    {
+        img: logo26,
+        title: 'Lt Gen Sanjay Mitra, AVSM, GOC, Strike Corps interacting during NorthTech, Leh 2024'
+    },
+    {
+        img: logo25,
+        title: 'Lt Gen AS Pendharkar, AVSM, YSM, GOC-in-C, Spear Corps interacting at IIT Ropar stall in EastTech, 2024 Kolkata'
+    },
+
+    {
+        img: logo7,
+        title: 'Sr Army officials interacting with Faculty in Expo'
+    },
+    {
+        img: logo20,
+        title: 'Team IIT Ropar visiting Uri Grn for project'
+    },
+    {
+        img: logo5,
+        title: 'PI & Students in-field trials',
+    },
+    {
+        img: logo2,
+        title: 'Certification of first batch of DGR Course, Cyber-Warriors',
+    },
+    {
+        img: logo11,
+        title: 'Dr. Atharva Poundarik interacting with first batch of Cyber-Warriors'
+    },
+    {
+        img: logo4,
+        title: 'Chematico Technologies (Startup) displaying products at Bharat Tex 2024',
+    },
+
+
     {
         img: logo22,
         title: 'Faculties IIT Ropar interacting with fd fmn'
     },
-    
+
 
 ];
 function Events() {

@@ -7,6 +7,8 @@ import general from './general.jpg';
 import atharva from './atharva.png';
 import harbans from './harbans.jpg';
 import admiral from './admiral.jpg';
+import vir from './Vir.jpeg';
+import prabir2 from './prabir2.jpg';
 // import img2 from '../global-images/'
 // import temp from '../'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -23,6 +25,18 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/lt-gen-surinder-singh-mahal-7789b82b9/",
   },
   {
+    imgSrc:admiral,
+    name: 'Rear Adm Brijesh Vashishta (Retd)',
+    designation: 'Professor Of Practice',
+    linkedin: 'https://www.linkedin.com/in/',
+  },
+  {
+    imgSrc: vir,
+    name : "Virbhadra Singh Rawat",
+    designation : "Professor of Practice",
+    linkedin : "https://www.linkedin.com/in/virbhadra-singh-rawat-018359168",
+  },
+  {
     imgSrc: atharva,
     name: 'Dr. Atharva Poundarik',
     designation: 'Faculty In-Charge',
@@ -31,15 +45,10 @@ const teamMembers = [
   {
     imgSrc: colonel,
     name: 'Col. Prabir Sengupta VSM (Retd)',
-    designation: 'Professor Of Practice',
+    designation: 'Adjunct Faculty',
     linkedin: 'https://www.linkedin.com/in/colprabirsengupta/',
   },
-  {
-    imgSrc:admiral,
-    name: 'Rear Adm Brijesh Vashishta (Retd)',
-    designation: 'Professor Of Practice',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
+  
   {
     imgSrc: harbans,
     name: 'Harbans Bharadwaj (Veteran)',
@@ -60,7 +69,7 @@ function Team() {
         <div className='flex justify-center items-center'>
           <div className="grid xl:grid-cols-3   md:grid-cols-2 gap-3 flex-wrap auto-rows-auto">
             {teamMembers.map((member, index) => (
-              <div key={index} className={`outTeam__card hover:scale-105 hover:text-orange-200 transition duration-200 ease-in-out hover:bg-gradient-to-tr from-zinc-900 to-blue-500 ${index === 4 ? 'xl:col-start-3' : ''}`}>
+              <div key={index} className={`outTeam__card hover:scale-105 hover:text-orange-200 transition duration-200 ease-in-out hover:bg-gradient-to-tr from-zinc-900 to-blue-500 ${index === 6? 'xl:col-start-3' : ''}`}>
                 <div className='flex flex-col justify-between h-[400px]'>
                   <div className='grid grid-cols-1 justify-items-center'>
                     <img src={member.imgSrc} alt={member.name} className="outTeam__cardImg fa-border border-yellow-500 border-4" />
