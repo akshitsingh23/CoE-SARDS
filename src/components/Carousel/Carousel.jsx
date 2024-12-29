@@ -48,6 +48,7 @@ function Carousel() {
     const [transition, setTransition] = useState(true);
     const [timer, setTimer] = useState(4000); // Default timer is 8 seconds
     const [isPaused, setIsPaused] = useState(false);
+    const [isDragging, setIsDragging] = useState(false);
 
     useEffect(() => {
         if (!isPaused) {
@@ -103,22 +104,34 @@ function Carousel() {
         }, 300); // Transition duration
         setTimer(3000);
     };
-
+    const bind = useDrag(({ down, movement: [mx], direction: [xDir], distance, cancel }) => {
+        if (down && distance > 100) {
+            if (xDir > 0) {
+                handlePrev();
+            } else {
+                handleNext();
+            }
+            cancel();
+        }
+    });
     return (
         <div
             className="relative flex items-center justify-center h-screen overflow-hidden"
             onMouseDown={handleMouseDown} // Pause on interaction
             onMouseUp={handleMouseUp} // Resume on release
+
         >
-            <div className="relative w-full h-full">
+            <div
+                className="relative w-full h-full"
+                >
                 {images.map((image, index) => (
                     <div
                         key={index}
                         className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out ${index === activeIndex
                             ? "translate-x-0"
                             : index > activeIndex
-                            ? "translate-x-full"
-                            : "-translate-x-full"
+                                ? "translate-x-full"
+                                : "-translate-x-full"
                             }`}
                     >
                         <img

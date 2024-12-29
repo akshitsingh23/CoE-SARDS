@@ -118,3 +118,23 @@
         height: 500px;
     }
 }
+/* programs.css */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.program-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.7s ease-out;
+}
+
+.program-item.visible {
+    animation: fadeInUp 1s forwards;
+}

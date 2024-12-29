@@ -1,5 +1,5 @@
 // "use client";
-import React from 'react';
+import React , { useRef , useEffect } from 'react';
 import './programs.css';
 
 import img0 from "../power/army.png";
@@ -100,6 +100,36 @@ const programData = [
 ];
 
 function Programs() {
+    const programRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.9 }
+        );
+
+        programRefs.current.forEach((ref) => {
+            if (ref) {
+                observer.observe(ref);
+            }
+        });
+        return () => {
+            if (programRefs.current) {
+                programRefs.current.forEach((ref) => {
+                    if (ref) {
+                        observer.unobserve(ref);
+                    }
+                });
+            }
+        };
+    }, []);
     const handleMouseLeave = () => {
         const imgElement = document.getElementById('img2');
         if (imgElement) {
@@ -116,8 +146,13 @@ function Programs() {
                 {/* <h1 className='text-white m-4 text-center text-xl font-montserrat lg:w-1/2 text-center'>Ongoing/Upcoming programs at TBI</h1> */}
             </div>
             <div className="flex justify-center items-center program-container gap-4">
-                {programData.map(program => (
-                    <div key={program.id} className="program-item bg-gradient-to-tr from-blue-300 to-blue-900 hover:bg-gradient-to-tr hover:from-red-800 hover:to-sky-400 hover:text-orange-200 font-Montserrat" data-wow-delay="0.2s" data-wow-duration="0.5s">
+                {programData.map((program , index) => (
+                    <div key={program.id} className="program-item bg-gradient-to-tr from-blue-300 to-blue-900 hover:bg-gradient-to-tr hover:from-red-800 hover:to-sky-400 hover:text-orange-200 font-Montserrat" 
+                    data-wow-delay="0.3s" 
+                    data-wow-duration="0.5s"
+                    ref={(el) => (programRefs.current[index] = el)}
+                    
+                    >
                         <div className='lg:block hidden'>
                             <br />
                             <br />
