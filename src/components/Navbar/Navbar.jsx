@@ -32,7 +32,7 @@ function Navbar() {
                 <div className="flex justify-between h-16 items-center">
                     <div className='flex flex-row'>
                         <Link to="https://iitrpr.ac.in" target='_blank' className="mr-2" onClick={scrollToTop}>
-                            <img id="logo" src={iitlogo} alt="Logo"  className={`h-20 w-20 ${scrolled ?"" : "invert"}`} />
+                            <img id="logo" src={iitlogo} alt="Logo" className={`h-20 w-20 ${scrolled ? "" : "invert"}`} />
                         </Link>
                         <Link to="/" className="flex items-center" onClick={scrollToTop}>
                             <img src={logo} alt="Logo" className="h-20 w-20 mr-2" />
@@ -42,7 +42,7 @@ function Navbar() {
                         </Link>
                     </div>
                     {/* {`text-xl font-bold font-montserrat  ${scrolled ? "text-white" : "text-black"} `} */}
-                    <div className={`hidden md:flex transition-colors text-center text-md space-x-6 font-montserrat font-bold duration-20 ${scrolled ? "text-black" : "text-white"} lg:px-12 px-3 py-4 `} >
+                    <div className={` justify-center items-center hidden md:flex transition-colors text-center text-md space-x-6 font-montserrat font-bold duration-20 ${scrolled ? "text-black" : "text-white"} lg:px-12 px-3 py-4 `} >
                         <Link to="/" className="hover:text-orange-500 hover:underline hover:underline-offset-8 hover:decoration-orange-500 transition-all duration-300" onClick={scrollToTop}>
                             Home
                         </Link>
@@ -58,6 +58,11 @@ function Navbar() {
                         </Link>
                         <Link to="/contact" className="hover:text-orange-500 hover:underline hover:underline-offset-8 hover:decoration-orange-500 transition-all duration-300" onClick={scrollToTop}>
                             Contact
+                        </Link>
+                        <Link to='/courses' onClick={scrollToTop}>
+                            <button to='' className='bg-orange-400 text-black  p-2 rounded-lg hover:bg-orange-900 hover:text-white transition-all duration-300'>
+                                Courses
+                            </button>
                         </Link>
                     </div>
 
@@ -128,6 +133,16 @@ function Navbar() {
                             }}
                         >
                             Contact
+                        </Link>
+                        <Link
+                            to='/courses'
+                            className="block text-center text-xl text-black hover:text-orange-500 transition-all duration-300 bg-orange-400 rounded-xl p-3"
+                            onClick={() => {
+                                toggleNavbar();
+                                scrollToTop();
+                            }}
+                        >
+                            Courses
                         </Link>
                     </div>
                 )}

@@ -68,11 +68,11 @@ function Footer() {
                         </div>
                     </div>
                     <div className="flex justify-around items-center grid grid-col-1 lg:px-5">
-                        <a href='https://www.iitrpr.ac.in/coe-sards/Courses.html' target='_blank' className='flex justify-center items-center'>
-                            <button className='relative bg-blue-300 font-bold p-2 text-lg mb-4 rounded-lg hover:shadow-xl hover:shadow-sky-300 hover:scale-110 transition transform-700 lg:mt-20'>
+                        <Link to='/courses' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex justify-center items-center'>
+                            <button  className='relative bg-blue-300 font-bold p-2 text-lg mb-4 rounded-lg hover:shadow-xl hover:shadow-sky-300 hover:scale-110 transition transform-700 lg:mt-20'>
                                 Courses We Offer
                             </button>
-                        </a>
+                        </Link>
                         <h2 className="sm:mb-10 xs:mb-10 xs:mt-5 font-roboto text-3xl text-center text-white transition-transform ease-in-out delay-400">Connect with Us</h2>
                         <div className="flex justify-between items-center gap-3 lg:mb-11 sm:mb-5 md:mb-8 xs:mb-5">
                             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
