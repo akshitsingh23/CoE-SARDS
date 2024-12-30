@@ -10,7 +10,7 @@ import logo8 from './8.jpg';
 import logo10 from './10.jpg';
 import logo11 from './11.jpg';
 import logo12 from './12.JPG';
-import logo13 from './13.jpeg';
+import logo13 from './13.webp';
 import logo14 from './14.jpg';
 import logo15 from './15.HEIC';
 import logo16 from './16.HEIC';
