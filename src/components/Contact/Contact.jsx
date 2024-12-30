@@ -24,9 +24,9 @@ function Contact() {
                         id="google-form"
                         src="https://docs.google.com/forms/d/e/1FAIpQLSeTlLNwtaSSjxRzkUr_OauhkjGOf38PQQ2ngtoxgON2pEBjJg/viewform?embedded=true"
                         // width="740"
-                        className='lg:w-[700px] md:w-[600px] w-[350px] lg:h-[900px] h-[1000px]'
+                        className='lg:w-[700px] w-full lg:h-[900px] h-[1000px]'
                         // height="900"
-                        frameborder="0"
+                        frameborder=""
                         marginheight="0"
                         scrolling='no'
                         onScroll={false}
