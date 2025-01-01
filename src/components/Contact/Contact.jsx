@@ -22,7 +22,7 @@ function Contact() {
                     </div>
                     <iframe
                         id="google-form"
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeTlLNwtaSSjxRzkUr_OauhkjGOf38PQQ2ngtoxgON2pEBjJg/viewform?embedded=true"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScYjfnY4UpPIWA6J4ayfq2dH-c5hBO692VjWWr3DfmUhuYHxw/viewform?embedded=true"
                         // width="740"
                         className='lg:w-[700px] w-full lg:h-[900px] h-[1000px]'
                         // height="900"
