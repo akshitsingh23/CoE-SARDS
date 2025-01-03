@@ -112,7 +112,7 @@ const teamMembers = {
     {
       imgSrc: atharva,
       name: 'Dr. Atharva Poundarik',
-      designation: 'Faculty In-Charge',
+      designation: 'Head/Coordinator',
       linkedin: 'https://www.linkedin.com/in/atharva-poundarik-44723b44/',
     },
     {
@@ -158,14 +158,15 @@ function Team() {
       <div className="container mx-5 flex-col">
         <br />
         <br />
-        <h1 className="text-center bg-clip-text text-transparent mb-5 bg-gradient-to-tr from-red-400 to-blue-300 text-center mt-5 font-montserrat font-bold text-5xl">
+        <br />
+        {/* <h1 className="text-center bg-clip-text text-transparent mb-5 bg-gradient-to-tr from-red-400 to-blue-300 text-center mt-5 font-montserrat font-bold text-5xl">
           Dedicated Team
-        </h1>
+        </h1> */}
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Administration Section */}
           <div className='flex flex-col items-center '>
             <h2 className="text-center text-orange-400 font-montserrat font-bold text-4xl mb-5">
-              Administration
+              Administrative
             </h2>
             <div className="grid sm:grid-cols-2 gap-5 ">
               {teamMembers.administration.map((member, index) => (

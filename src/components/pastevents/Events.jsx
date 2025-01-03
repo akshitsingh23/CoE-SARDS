@@ -70,7 +70,7 @@ const originalImages  = [
 
     {
         img: logo12,
-        title: 'The Genesis : Lt Gen Subrata Saha, PVSM, UYSM, YSM, VSM** (Retd) with Director IIT Ropar'
+        title: 'Lt Gen Subrata Saha, PVSM, UYSM, YSM, VSM** (Retd) with Director IIT Ropar'
     },
     {
         img: logo24,

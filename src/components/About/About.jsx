@@ -23,19 +23,14 @@ function About() {
                         <h1 className="text-4xl font-bold mb-8 text-center">Our Story & Formation</h1>
                         <p className="text-lg leading-relaxed text-justify">
                             <div className='font-montserrat font-bold text-center'>Building a Legacy of Excellence in Defence and Security</div>
-                            The Centre of Excellence for Studies and Applied Research in
-                            Defence and Security (CoE-SARDS) at IIT Ropar was
-                            founded with a clear and compelling purpose: to bridge the
-                            gap between the Indian Armed Forces, Academia and the
-                            Defence Industry. Recognizing the need for innovation,
-                            collaboration, and specialized knowledge; IIT Ropar
-                            established CoE-SARDS as the hub of cutting-edge Research
-                            &amp; Development, technical consultancy and advanced training
-                            in defence and security. Our journey began with the support
-                            of the HQ Army Training Command (ARTRAC) which
-                            recognized the potential of IIT Ropar to address the critical
-                            needs of our Armed Forces. Today, are actively engaged with
-                            all the three Services. Having successfully executed vital
+                            The Centre of Excellence for Studies and Applied Research in Defence and Security (CoE-SARDS) at IIT Ropar was founded with a clear and compelling purpose:
+                            to bridge the gap between the Indian Armed Forces, academia, and the defence industry.
+                            Recognizing the need for innovation, collaboration, and specialized knowledge,
+                            IIT Ropar established CoE-SARDS as a hub for cutting-edge research and development, technical consultancy, and advanced training in defence and security.
+                            <br />
+                            Our journey began with the support of the Army Training Command (ARTRAC), 
+                            which recognized IIT Ropar's potential to address the critical needs of the Armed Forces. 
+                            Today, we are actively engaged with all three services. Having successfully executed vital
                             defence projects we have established ourselves as a trusted
                             partner in India&#39;s Defence Ecosystem to contribute
                             significantly to national defence. Our story is one of growth,
