@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import logo1 from './1.jpg';
 import logo2 from './2.jpg';
 import logo3 from './3.jpg';
@@ -28,7 +28,7 @@ import logo27 from './27.jpeg';
 import logo28 from './building.png';
 import cybersec from './cybersec.jpg';
 
-const images = [
+const originalImages  = [
     {
         img: logo13,
         title: 'Interaction with Gen Upendra Dwivedi, PVSM, AVSM, COAS with team IIT Ropar'
@@ -96,7 +96,8 @@ const images = [
     },
     {
         img: logo28,
-        title: 'Lt Gen MV Suchindra Kumar inaugurated the first-ever precast single officer’s accommodation in Dhruva Command, a pioneering R&D project with CoE-SARDS at IIT Ropar, introducing rapid, high-quality construction techniques.'    },
+        title: 'Lt Gen MV Suchindra Kumar inaugurated the first-ever precast single officer’s accommodation in Dhruva Command, a pioneering R&D project with CoE-SARDS at IIT Ropar, introducing rapid, high-quality construction techniques.'
+    },
     {
         img: logo20,
         title: 'Team IIT Ropar visiting Uri Grn for project'
@@ -126,7 +127,22 @@ const images = [
 
 
 ];
+const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+};
 function Events() {
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        const shuffledImages = shuffleArray(originalImages);
+        setImages(shuffledImages);
+    }, []);
+
     return (
         <div className='flex flex-col items-center justify-center'>
             <br />
