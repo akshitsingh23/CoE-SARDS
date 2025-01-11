@@ -141,9 +141,9 @@ function Carousel() {
                         />
                         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/60">
                             <div className="w-3/4 text-center md:w-2/4">
-                                <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-montserrat text-white">
+                                <div className="mb-4 text-3xl md:text-4xl lg:text-5xl font-montserrat text-white">
                                     {image.title}
-                                </h1>
+                                </div>
                                 <p className="text-white font-montserrat text-lg">
                                     {image.description}
                                     

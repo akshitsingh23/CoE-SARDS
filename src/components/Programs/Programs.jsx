@@ -139,9 +139,9 @@ function Programs() {
 
     return (
         <div className='bg-black h-auto p-10'>
-            <h1 className='text-red-400 opacity-70 text-center text-5xl mb-8 font-bold font-montserrat'>
+            <div className='text-red-400 opacity-70 text-center text-5xl mb-8 font-bold font-montserrat'>
                 <span className='text-red-500 text-6xl'>P</span>rograms
-            </h1>
+            </div>
             <div className='flex justify-center items-center'>
                 {/* <h1 className='text-white m-4 text-center text-xl font-montserrat lg:w-1/2 text-center'>Ongoing/Upcoming programs at TBI</h1> */}
             </div>

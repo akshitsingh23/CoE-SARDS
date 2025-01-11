@@ -48,7 +48,7 @@ function About() {
                         <img src={svg1} alt="Our Story" className="rounded-lg" />
                     </div>
                     <div className="lg:w-1/2 lg:pl-8">
-                        <h1 className="text-4xl font-bold mb-8 text-center">Our Story & Formation</h1>
+                        <div className="text-4xl font-bold mb-8 text-center">Our Story & Formation</div>
                         <p className="text-lg leading-relaxed text-justify">
                             <div className='font-montserrat font-bold text-center'>Building a Legacy of Excellence in Defence and Security</div>
                             The Centre of Excellence for Studies and Applied Research in Defence and Security (CoE-SARDS) at IIT Ropar was founded with a clear and compelling purpose:

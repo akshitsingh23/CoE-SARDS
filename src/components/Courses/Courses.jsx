@@ -67,9 +67,9 @@ function Courses() {
                 variants={fadeInUp}
                 className="text-center mb-12"
             >
-                <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-red-100 to-blue-300 font-montserrat">
+                <div className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-red-100 to-blue-300 font-montserrat">
                     Explore Our Courses
-                </h1>
+                </div>
             </motion.div>
 
             <div className="grid gap-10 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 mx-auto">
