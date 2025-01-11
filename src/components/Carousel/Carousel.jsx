@@ -20,27 +20,27 @@ function Carousel() {
     const images = [
         {
             src: flyingtank,
-            title: "The Beauty of Success",
+            title: "A Secure Future Through Synergy",
             description:
-                "A self-reliant India will be a force multiplier for the global economy. We will make products in India, for the world.",
+                "Bridging the gap between the Indian Armed Forces, Academia and the Defence Industry will help fuse strategic thought, operational excellence and technical expertise to create a strong Nation.",
         },
         {
             src: logo1,
-            title: "The Beauty of Innovation",
+            title: "A Secure Future Through Atma-Nirbharta",
             description:
-                "Innovation is the key to realizing the dream of 'New India.' It is the need of the hour, and we in India need to innovate and invest in technology to create a better future.",
+                "Strengthening homegrown research and innovation in defence technologies by collaborating with industry partners and mentoring deep-tech start-ups will lead the charge in creating a new self-reliant India.",
         },
         {
             src: heli3,
-            title: "The Beauty of Incubation",
+            title: "A Secure Future Through Innovation",
             description:
-                "The most powerful incubators are those that foster not just growth but also resilience in the startups they nurture.",
+                "Fostering technological innovation with access to cutting-edge technology will enable our Armed Forces to evolve into a modern, agile, adaptive, technology- enabled and self-reliant force to meet emerging challenges.",
         },
         {
             src: vikrant,
-            title: "The Beauty of Power",
+            title: "A Secure Future Through Power",
             description:
-                "The power of a nation derives from the integrity of the home. The power of a nation derives from the integrity of the home. The power of a nation derives from the integrity of the home.",
+                "Comprehensive Nation Power is the key to realizing the dream of New India It is the need of the hour, and we in India need to build and aggregate CNP to be counted amongst the comity of Nations.",
         },
     ];
 
@@ -123,7 +123,7 @@ function Carousel() {
         >
             <div
                 className="relative w-full h-full"
-                >
+            >
                 {images.map((image, index) => (
                     <div
                         key={index}
@@ -144,8 +144,9 @@ function Carousel() {
                                 <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-montserrat text-white">
                                     {image.title}
                                 </h1>
-                                <p className="text-white font-montserrat">
+                                <p className="text-white font-montserrat text-lg">
                                     {image.description}
+                                    
                                 </p>
                             </div>
                         </div>

@@ -1,42 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 function Courses() {
+    const [expanded, setExpanded] = useState({});
+
+    const toggleExpand = (sectionIndex, itemIndex) => {
+        setExpanded(prev => ({
+            ...prev,
+            [sectionIndex]: {
+                ...prev[sectionIndex],
+                [itemIndex]: !prev[sectionIndex]?.[itemIndex]
+            }
+        }));
+    };
+
     const sections = [
         {
             title: "M.Tech/Ph.D",
             description: "Advanced research programs with professional training.",
             items: [
-                { desciption: "07 - PhD seats offered to ARTRAC" },
-                { desciption: "12 - MTech seats offered to ARTRAC" },
+                { description: "07 - PhD seats offered to ARTRAC", details: "PhD seats are allocated to different streams including AI, ML, and Robotics." },
+                { description: "12 - MTech seats offered to ARTRAC", details: "MTech seats are available in Data Science and Aerospace Engineering." },
             ],
-            // image: "/path/to/tank-image.svg", // Replace with actual image path or SVG
         },
         {
             title: "DGR",
             description: "Specialized courses to upskill in critical technology fields.",
             items: [
-                { desciption: "Drone Technology Course" },
-                { desciption: "Cyber Security (Certification) Course" },
-                { desciption: "Material Science & Mission Reliability (Certification) Course" },
+                { description: "Drone Technology Course", details: "Covers drone design, programming, and operation." },
+                { description: "Cyber Security (Certification) Course", details: "Includes training on ethical hacking, secure programming, and network defense." },
+                { description: "Material Science & Mission Reliability (Certification) Course", details: "Focuses on advanced material testing and reliability assessment." },
             ],
-            // image: "/path/to/tank-image.svg",
         },
         {
             title: "ARTRAC",
             description: "Exclusive drone courses tailored for ARTRAC.",
             items: [
-                { desciption: "Drone Technology Course" },
+                { description: "Drone Technology Course", details: "Specialized training for ARTRAC participants on drone technology and its applications." },
             ],
-            // image: "/path/to/tank-image.svg",
         },
         {
             title: "RPTO",
             description: "Become a certified drone pilot with DGCA training.",
             items: [
-                { desciption: "Certificate for Drone Pilot Training (DGCA Certified Course)" },
+                { description: "Certificate for Drone Pilot Training (DGCA Certified Course)", details: "This course provides comprehensive training for obtaining DGCA certification as a drone pilot." },
             ],
-            // image: "/path/to/tank-image.svg",
         },
     ];
 
@@ -50,7 +60,6 @@ function Courses() {
             <br />
             <br />
             <br />
-            {/* <br /> */}
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -62,41 +71,47 @@ function Courses() {
                     Explore Our Courses
                 </h1>
             </motion.div>
-            
+
             <div className="grid gap-10 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 mx-auto">
-                {sections.map((section, index) => (
+                {sections.map((section, sectionIndex) => (
                     <motion.div
-                        key={index}
+                        key={sectionIndex}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.4 }}
                         variants={fadeInUp}
                         className="bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                     >
-                        <div className="flex items-center p-6 bg-orange-800">
-                            {section.image && (
-                                <img
-                                    src={section.image}
-                                    alt={`${section.title} Icon`}
-                                    className="w-16 h-16 mr-4"
-                                />
-                            )}
+                        <div className="flex items-center p-6 bg-gray-800 font-montserrat">
                             <div>
                                 <h2 className="text-2xl font-bold">{section.title}</h2>
                                 <p className="text-sm text-gray-100">{section.description}</p>
                             </div>
                         </div>
                         <div className="p-6">
-                            <ul className="space-y-4">
-                                {section.items.map((item, idx) => (
-                                    <li
-                                        key={idx}
-                                        className="bg-gray-800 text-gray-300 p-4 rounded-lg shadow hover:bg-gray-900"
+                            <div className="space-y-4 font-montserrat">
+                                {section.items.map((item, itemIndex) => (
+                                    <div
+                                        key={itemIndex}
+                                        className="bg-gray-800 text-gray-100 p-4 rounded-lg shadow hover:bg-gray-900"
                                     >
-                                        {item.desciption}
-                                    </li>
+                                        <div className="flex justify-between items-center">
+                                            <span>{item.description}</span>
+                                            <button
+                                                className="text-xl text-orange-400 hover:text-white focus:outline-none"
+                                                onClick={() => toggleExpand(sectionIndex, itemIndex)}
+                                            >
+                                                {expanded[sectionIndex]?.[itemIndex] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {expanded[sectionIndex]?.[itemIndex] && (
+                                            <div className="mt-3 bg-gray-900 p-3 rounded-lg text-gray-200">
+                                                {item.details}
+                                            </div>
+                                        )}
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
                     </motion.div>
                 ))}
