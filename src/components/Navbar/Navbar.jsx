@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logo1.png'; // Update with the correct path to your logo
 import iitlogo from './logo.png';
+import iithead from './iit-head.png'; // Update with the correct path to
 import './navbar.css'
 function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -32,7 +33,7 @@ function Navbar() {
                 <div className="flex justify-between h-16 items-center">
                     <div className='flex flex-row'>
                         <Link to="https://iitrpr.ac.in" target='_blank' className="mr-2" onClick={scrollToTop}>
-                            <img id="logo" src={iitlogo} alt="Logo" className={`h-20 w-20 ${scrolled ? "" : "invert"}`} />
+                            <img id="logo" src={iithead} alt="Logo" className={` h-24 w-24 ${scrolled ? "invert" : ""}`} />
                         </Link>
                         <Link to="/" className="flex items-center" onClick={scrollToTop}>
                             <img src={logo} alt="Logo" className="h-20 w-20 mr-2" />
