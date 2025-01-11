@@ -103,12 +103,19 @@ import atharva from './atharva.png';
 import harbans from './harbans.jpg';
 import admiral from './admiral.jpg';
 import vir from './Vir.jpeg';
+import rajeev from './rajeev4.jpg';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
 const teamMembers = {
   administration: [
+    {
+      imgSrc: rajeev,
+      name: 'Dr. Rajeev Ahuja',
+      designation: 'Director IIT Ropar',
+      linkedin: 'https://www.iitrpr.ac.in/director',
+    },
     {
       imgSrc: atharva,
       name: 'Dr. Atharva Poundarik',
@@ -155,6 +162,8 @@ function Team() {
   return (
     <div className="flex justify-center items-center h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-10">
       <div className="container mx-5 flex-col">
+        <br />
+        <br />
         <br />
         <br />
         <br />
