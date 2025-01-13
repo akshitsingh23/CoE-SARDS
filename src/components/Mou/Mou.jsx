@@ -76,7 +76,7 @@ export function Mou() {
     return (
         <div className="h-full w-full overflow-y-hidden bg-black lh:p-24 py-10">
             <div className='h-full w-full flex flex-col items-center justify-center p-10'>
-                <div className="text-white text-4xl text-center">MoUs in place with the following commands/Govt agencies</div>
+                <div className="text-white text-4xl text-center">MoUs in place with the following Commands/Govt Agencies</div>
             </div>
             <div className='lg:p-2 p-1'>
                 <Marquee speed={120} className="w-full overflow-y-hidden bg-black">

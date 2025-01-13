@@ -82,7 +82,7 @@ function Courses() {
                         variants={fadeInUp}
                         className="bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                     >
-                        <div className="flex items-center p-6 bg-gray-800 font-montserrat">
+                        <div className="flex items-center p-6 bg-orange-900 font-montserrat">
                             <div>
                                 <h2 className="text-2xl font-bold">{section.title}</h2>
                                 <p className="text-sm text-gray-100">{section.description}</p>

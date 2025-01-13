@@ -32,12 +32,12 @@ function Navbar() {
             <div className="mx-auto px-4 sm:px-6 lg:px-2">
                 <div className="flex justify-between h-16 items-center">
                     <div className='flex flex-row'>
-                        <Link to="https://iitrpr.ac.in" target='_blank' className="mr-2" onClick={scrollToTop}>
-                            <img id="logo" src={iithead} alt="Logo" className={` h-24 w-24 ${scrolled ? "invert" : ""}`} />
+                        <Link to="https://iitrpr.ac.in" target='_blank' className="mr-2 " onClick={scrollToTop}>
+                            <img id="logo" src={iithead} alt="Logo" className={` h-24  w-24 hover:scale-95 ${scrolled ? "invert" : ""}`} />
                         </Link>
-                        <Link to="/" className="flex items-center" onClick={scrollToTop}>
+                        <Link to="/" className="flex items-center hover:scale-95" onClick={scrollToTop}>
                             <img src={logo} alt="Logo" className="h-20 w-20 mr-2" />
-                            <span className={` text-md lg:text-3xl  font-bold font-montserrat   ${scrolled ? "text-black" : "text-white"} duration-20 transition-colors `}>
+                            <span className={` text-md lg:text-3xl  font-bold font-montserrat    ${scrolled ? "text-black" : "text-white"} duration-20 transition-colors `}>
                                 CoE - SARDS
                             </span>
                         </Link>
