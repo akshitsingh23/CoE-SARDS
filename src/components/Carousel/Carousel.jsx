@@ -119,6 +119,8 @@ function Carousel() {
             className="relative flex items-center justify-center h-screen overflow-hidden"
             onMouseDown={handleMouseDown} // Pause on interaction
             onMouseUp={handleMouseUp} // Resume on release
+            {...bind()}
+            style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
 
         >
             <div
@@ -146,7 +148,7 @@ function Carousel() {
                                 </div>
                                 <p className="text-white font-montserrat text-lg">
                                     {image.description}
-                                    
+
                                 </p>
                             </div>
                         </div>
