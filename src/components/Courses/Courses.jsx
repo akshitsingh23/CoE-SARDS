@@ -21,9 +21,12 @@ function Courses() {
             title: "M.Tech/Ph.D",
             description: "Advanced research programs with professional training.",
             items: [
-                { description: "07 - PhD seats offered to ARTRAC", 
-                    details: "PhD seats are allocated to different streams for preferred area of research, both for regular and part-time." },
-                { description: "12 - MTech seats offered to ARTRAC", 
+                {
+                    description: "07 - PhD seats offered to ARTRAC",
+                    details: "PhD seats are allocated to different streams based on the preferred area of research, for both regular and part-time students."
+                },
+                {
+                    description: "12 - MTech seats offered to ARTRAC",
                     details: <>
                         Material Engineering  - 02
                         <br />
@@ -38,15 +41,135 @@ function Courses() {
                         Michroelectronics & VLSI Design - 01
                         <br />
                         Computational Mechanics - 01
-                    </> },
+                    </>
+                },
             ],
         },
         {
             title: "DGR",
             description: "Specialized courses to upskill in critical technology fields.",
             items: [
-                { description: " Certificate Course on Drone Technology (Undergoing)",
-                     details: <>
+                {
+                    description: "Industrial Management & Entrepreneurship",
+                    details: <>
+                        Course Number : 41-04-2025
+                        <br />
+                        Start Date : 7 Apr 25
+                        <br />
+                        End Date : 27 Jun 25
+                        <br />
+                        Vacancy : 40
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                        Remarks : Mechanical and HHS Dept
+                    </>
+                },
+                {
+                    description: "Certificate Course on Cyber Security",
+                    details: <>
+                        Course Number : 131-06-2025
+                        <br />
+                        Start Date : 9 Jun 25
+                        <br />
+                        End Date : 29 Aug 25
+                        <br />
+                        Vacancy : 40
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                        Remarks : CSE
+                    </>
+                },
+                {
+                    description: "Drone Training",
+                    details: <>
+                        Course Number : 223-08-2025
+                        <br />
+                        Start Date : 11 Aug 25
+                        <br />
+                        End Date : 31 Oct 25
+                        <br />
+                        Vacancy : 40
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                        Remarks : Drone Centre/ CSE
+                    </>
+                },
+                {
+                    description: "Material Science & Mission Reliability (Certification)",
+                    details: <>
+                        Course Number : 313-10-2025
+                        <br />
+                        Start Date : 13 Oct 25
+                        <br />
+                        End Date : 2 Jan 26
+                        <br />
+                        Vacancy : 40
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                        Remarks : Metallurgical & Materials Engg
+                    </>
+                },
+                {
+                    description: "Industrial Management & Entrepreneurship",
+                    details: <>
+                        Course Number : 359-11-2025
+                        <br />
+                        Start Date : 10 Nov 25
+                        <br />
+                        End Date : 30 Jan 26
+                        <br />
+                        Vacancy : 40
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                        Remarks : Mechanical and HHS Dept
+                    </>
+                },
+                {
+                    description: "Certificate Course on Cyber Security",
+                    details: <>
+                        Course Number : 448-01-2026
+                        <br />
+                        Start Date : 12 Jan 26
+                        <br />
+                        End Date : 3 Apr 26
+                        <br />
+                        Vacancy : 40
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                        Remarks : CSE
+                    </>
+                },
+                {
+                    description: "Drone Training",
+                    details: <>
+                        Course Number : 536-03-2026
+                        <br />
+                        Start Date : 9 Mar 26
+                        <br />
+                        End Date : 29 May 26
+                        <br />
+                        Vacancy : 40
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                        Remarks : Drone Centre/ CSE
+                    </>
+                },
+            ],
+        },
+        {
+            title: "ARTRAC",
+            description: "Exclusive drone courses tailored for ARTRAC.",
+            items: [
+                {
+                    description: " Certificate Course on Drone Technology (Undergoing)",
+                    details: <>
                         Course Number : 216-11-2024
                         <br />
                         Start Date : 25 Nov 24
@@ -56,9 +179,11 @@ function Courses() {
                         Vacancy : 35
                         <br />
                         Duration : 14 Weeks
-                     </> },
-                { description: " Certificate Course on Drone Technology", 
-                    details:<>
+                    </>
+                },
+                {
+                    description: " Certificate Course on Drone Technology",
+                    details: <>
                         Course Number : 300-03-2025
                         <br />
                         Start Date : 24 Mar 25
@@ -70,9 +195,11 @@ function Courses() {
                         Duration : 14 Weeks
                         <br />
 
-                </> },
-                { description: "Material Science & Mission Reliability (Certification) Course",
-                     details: <>
+                    </>
+                },
+                {
+                    description: "Material Science & Mission Reliability (Certification) Course",
+                    details: <>
                         Course Number : 266-02-2025
                         <br />
                         Start Date : 10 Feb 25
@@ -83,15 +210,8 @@ function Courses() {
                         <br />
                         Duration : 12 Weeks
                         <br />
-                     </> },
-            ],
-        },
-        {
-            title: "ARTRAC",
-            description: "Exclusive drone courses tailored for ARTRAC.",
-            items: [
-                { description: "Drone Technology Course", details: "Specialized training for ARTRAC participants on drone technology and its applications." },
-            ],
+                    </>
+                },],
         },
         {
             title: "RPTO",
