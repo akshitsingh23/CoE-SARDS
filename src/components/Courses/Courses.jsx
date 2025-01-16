@@ -21,17 +21,69 @@ function Courses() {
             title: "M.Tech/Ph.D",
             description: "Advanced research programs with professional training.",
             items: [
-                { description: "07 - PhD seats offered to ARTRAC", details: "PhD seats are allocated to different streams including AI, ML, and Robotics." },
-                { description: "12 - MTech seats offered to ARTRAC", details: "MTech seats are available in Data Science and Aerospace Engineering." },
+                { description: "07 - PhD seats offered to ARTRAC", 
+                    details: "PhD seats are allocated to different streams for preferred area of research, both for regular and part-time." },
+                { description: "12 - MTech seats offered to ARTRAC", 
+                    details: <>
+                        Material Engineering  - 02
+                        <br />
+                        Artificial Intelligence - 02
+                        <br />
+                        Structural Engineering & Geo Mechanics - 02
+                        <br />
+                        Computer Science & Engineering - 02
+                        <br />
+                        Communication & Signal Processing - 02
+                        <br />
+                        Michroelectronics & VLSI Design - 01
+                        <br />
+                        Computational Mechanics - 01
+                    </> },
             ],
         },
         {
             title: "DGR",
             description: "Specialized courses to upskill in critical technology fields.",
             items: [
-                { description: "Drone Technology Course", details: "Covers drone design, programming, and operation." },
-                { description: "Cyber Security (Certification) Course", details: "Includes training on ethical hacking, secure programming, and network defense." },
-                { description: "Material Science & Mission Reliability (Certification) Course", details: "Focuses on advanced material testing and reliability assessment." },
+                { description: " Certificate Course on Drone Technology (Undergoing)",
+                     details: <>
+                        Course Number : 216-11-2024
+                        <br />
+                        Start Date : 25 Nov 24
+                        <br />
+                        End Date : 28 Feb 25
+                        <br />
+                        Vacancy : 35
+                        <br />
+                        Duration : 14 Weeks
+                     </> },
+                { description: " Certificate Course on Drone Technology", 
+                    details:<>
+                        Course Number : 300-03-2025
+                        <br />
+                        Start Date : 24 Mar 25
+                        <br />
+                        End Date : 27 Jun 25
+                        <br />
+                        Vacancy : 30
+                        <br />
+                        Duration : 14 Weeks
+                        <br />
+
+                </> },
+                { description: "Material Science & Mission Reliability (Certification) Course",
+                     details: <>
+                        Course Number : 266-02-2025
+                        <br />
+                        Start Date : 10 Feb 25
+                        <br />
+                        End Date : 02 May 25
+                        <br />
+                        Vacancy : 30
+                        <br />
+                        Duration : 12 Weeks
+                        <br />
+                     </> },
             ],
         },
         {
@@ -105,7 +157,7 @@ function Courses() {
                                             </button>
                                         </div>
                                         {expanded[sectionIndex]?.[itemIndex] && (
-                                            <div className="mt-3 bg-gray-900 p-3 rounded-lg text-gray-200">
+                                            <div className="mt-3 bg-gray-900 p-3 rounded-lg text-gray-200 lg:text-lg text-sm ">
                                                 {item.details}
                                             </div>
                                         )}
