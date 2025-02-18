@@ -97,7 +97,7 @@ function Footer() {
             <div
                 id="developer"
                 className="text-center bg-gradient-to-r from-black via-gray-700 to-black hover:from-orange-700 hover:via-orange-400 hover:to-orange-800 rounded-full hover:text-xl transition-all duration-300 ease-in-out text-white font-montserrat text-sm lg:opacity-90 lg:bottom-0 lg:w-full lg:left-0 lg:hover:opacity-100 md:static md:opacity-100 md:p-3 sm:static sm:opacity-100 sm:p-3 p-10 mt-5 shadow-lg hover:shadow-orange-300">
-                <a href="http://akshit-singh.vercel.app" target="_blank" className="font-bold hover:text-gray-800 transition-colors duration-300">Developed by Akshit</a>
+                <a href="http://iitrpr.ac.in/akshit" target="_blank" className="font-bold hover:text-gray-800 transition-colors duration-300">Developed by Akshit</a>
             </div>
 
 
