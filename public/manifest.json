@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CoE-SARDS",
+  "name": "CoE-SARDS IIT Ropar",
+  "description": "Center of Excellence for Studies and Applied Research in Defence and Security, IIT Ropar",
   "icons": [
     {
       "src": "favicon.ico",
